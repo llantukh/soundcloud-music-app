@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+<!-- this doesn't show up on the page at all -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,25 +10,37 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
 
-  <body class = "container">
+  <body>
 
+<!-- section 1: container houses everything on the page. i originally put it on the body, but it wouldn't separate the project from the background/rest of the page -->
+    <div class = "container">
+
+<!-- section 2: top of the page -->
     <div class="heading">
       <h3> Really Awesome Music Site </h3>
     </div>
 
+<!-- section 3: controls for the audio and current song playing -->
     <div class="music">
       <audio controls = "controls">
         <!-- <source src = ""> -->
       </audio>
     </div>
 
+<!-- section 4: user types in song/artist and search button -->
     <div class = "search">
-      <input type= "text">
+      <input class = "text">
       <input type = "submit" value = "Search" class = "button"/>
     </div>
 
+<!-- section 5: search results; the rest of the html for this sections is in template.js -->
     <div class="searchResults">
+      <div class = "results">
+        <p>Search Results:</p>
+      </div>
     </div>
+
+  </div>
 
 
     <script src="js/bundle.js"></script>
