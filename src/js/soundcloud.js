@@ -27,4 +27,4 @@ var makeRequest = $.ajax({
 //
 
 
-export {makeRequest};
+export { makeRequest };

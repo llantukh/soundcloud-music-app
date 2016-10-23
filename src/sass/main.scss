@@ -1,0 +1,89 @@
+// sections are defined in index.html
+
+// section 1:
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background: #F5F5F5;
+  width: 650px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+// section 2:
+.heading > h3 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 5px;
+  font-size: 25px;
+  text-align: center;
+}
+
+// section 3:
+audio {
+  width: 600px;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+// section 4:
+.search {
+  padding-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text {
+  width: 460px;
+  border: 1px solid grey;
+}
+
+.button {
+  width: 100px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+// section 5:
+.searchResults {
+  margin-left: 20px;
+}
+//
+p {
+  font-size: 12px;
+}
+
+.resultsBox {
+  width: 100px;
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.resultsBox > div {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.songName {
+  font-size: 10px;
+}
+
+.artistName {
+  font-size: 12px;
+}
+
+// .controls {
+//   border: 1px #878787;
+// }
+
+// .resultsBox {
+//   clear: both;
+// }
