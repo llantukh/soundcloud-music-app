@@ -4,7 +4,7 @@ import $ from "jquery";
 function displayResults (data){
 
 data.forEach(function(item){
-  console.log(item)
+  // console.log(item)
   var resultsHtml = `<div class = "resultsBox">
     <img src = ${item.artwork_url || item.user.avatar_url}>
     <div class = "songName">
