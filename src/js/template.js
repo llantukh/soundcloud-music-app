@@ -3,8 +3,10 @@ import $ from "jquery";
 
 function displayResults (data) {
 
-  console.log(data);
+  // console.log(data);
   $(".searchResults").empty();
+  // This clears our page of old results bc below we are appending,
+  // so if we don't clear the page new results just get added to the bottom.
 
   data.forEach(function(item){
     // console.log(item)
@@ -26,3 +28,5 @@ function displayResults (data) {
 };
 
 export { displayResults };
+
+// Function displayResults pulls the information we actually want from our ajax request and puts it on the page. The artist image, name, and song title all get put into regular html divs. The stream_url, however, has to get stored in the resultsBox's main div so that it is still available when we click on the image. 

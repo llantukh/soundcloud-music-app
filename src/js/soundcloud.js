@@ -19,6 +19,7 @@ function searchTracks (query) {
     }
   });
 }
+// Function searchTracks gives us the ability to make the ajax request as many times as we want. We give it the parameter query bc it will be passed information later. The data:{q:query} has to be there bc soundcloud's API tells us that it looks for the q when you give it a string (artist or song name).
 
 
 //make sure the request works and returns something
