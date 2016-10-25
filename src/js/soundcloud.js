@@ -4,19 +4,21 @@ import clientId from "./token.js";
 console.log(clientId);
 
 //create ajax setup for the client id since it has to be in the url
-
 $.ajaxSetup ({
   data: {
     client_id: clientId
   }
 });
 
-
 //make ajax request:
-
-var makeRequest = $.ajax({
-  url: "https://api.soundcloud.com/tracks"
-});
+function searchTracks (query) {
+  return $.ajax({
+    url: "https://api.soundcloud.com/tracks",
+    data: {
+      q: query
+    }
+  });
+}
 
 
 //make sure the request works and returns something
@@ -26,5 +28,5 @@ var makeRequest = $.ajax({
 // };
 //
 
-
-export { makeRequest };
+// export { logData };
+export { searchTracks };
